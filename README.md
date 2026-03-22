@@ -1,4 +1,4 @@
-# Project 5 — Monitoring with Prometheus + Grafana on Kubernetes
+# Monitoring with Prometheus + Grafana on Kubernetes
 
 ## Overview
 Set up a complete monitoring stack on AWS EKS using Prometheus and Grafana.
@@ -11,14 +11,14 @@ Prometheus was live at: http://localhost:9090 (via port-forward)
 ## Architecture
 ```
 Kubernetes Cluster (EKS)
-    ├── default namespace
-    │   └── webapp-deployment (3 pods)
-    └── monitoring namespace
-        ├── Prometheus      — collects metrics every 15s
-        ├── Grafana         — visualizes metrics
-        ├── AlertManager    — handles alerts
-        ├── Node Exporter   — collects node metrics
-        |-- kube-state-metrics — collects K8s metrics
+    |__ default namespace
+    |   |__ webapp-deployment (3 pods)
+    |__ monitoring namespace
+        |__ Prometheus      — collects metrics every 15s
+        |__ Grafana         — visualizes metrics
+        |__ AlertManager    — handles alerts
+        |__ Node Exporter   — collects node metrics
+        |__ kube-state-metrics — collects K8s metrics
 ```
 
 ## Tech Stack
