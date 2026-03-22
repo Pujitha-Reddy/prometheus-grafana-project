@@ -18,7 +18,7 @@ Kubernetes Cluster (EKS)
         ├── Grafana         — visualizes metrics
         ├── AlertManager    — handles alerts
         ├── Node Exporter   — collects node metrics
-        └── kube-state-metrics — collects K8s metrics
+        |-- kube-state-metrics — collects K8s metrics
 ```
 
 ## Tech Stack
